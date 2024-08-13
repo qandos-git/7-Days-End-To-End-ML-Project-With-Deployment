@@ -1,4 +1,6 @@
 #reposible to build the app as package and install is as pipPy
+#When -e . is added to requirements.txt, it tells pip to look for the setup.py file in the current directory (indicated by the .) and install the package described by that file in "editable mode."
+#pip install -e . (can used to run setup.py and build editable package)
 
 from setuptools import find_packages, setup
 from typing import List
