@@ -33,7 +33,7 @@ class CustomException(Exception):
         """Initializes the CustomException with a detailed error message.
 
         Args:
-            error_message (module): The Exception module, a message describing the error.
+            error_message (module): The Exception module, contains a message describing the error.
             error_detail (module): The sys module to extract traceback information.
         """
         super().__init__(error_message)
