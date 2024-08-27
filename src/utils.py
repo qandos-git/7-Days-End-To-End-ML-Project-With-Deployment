@@ -5,6 +5,7 @@ import pandas as pd
 import dill
 
 from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV
 
 from src.exception import CustomException
 from src.logger import logging
@@ -25,12 +26,18 @@ def save_object(file_path, obj):
     except Exception as e:
         raise CustomException(e, sys)
     
-def evaluate_models(X_train, y_train, X_test, y_test, models):
+def evaluate_models(X_train, y_train, X_test, y_test, models, parameters):
     try:
         report = {}
 
         for i, (model_name, model) in enumerate(models.items()):
-            model.fit(X_train, y_train) 
+            model_parameters = parameters[model_name]
+            gs = GridSearchCV(model, model_parameters, cv=3)
+            gs.fit(X_train, y_train) #fit model with defferent hyperparameters to find the best 
+            
+            model.set_params(**gs.best_params_) #** unpack the dictionary as keyword arguments key=value
+            
+            model.fit(X_train,y_train)
 
             y_train_pred = model.predict(X_train)
             y_test_pred = model.predict(X_test)
