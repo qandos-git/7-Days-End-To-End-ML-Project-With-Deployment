@@ -23,14 +23,14 @@ def predict():
         predict_pipeline = PredictPipeline()
 
         df = data.get_data_as_data_frame()
-        logging.info('dataframe:', df)
+        logging.info('dataframe: {df}')
 
         prediction = predict_pipeline.predict(df)
-        logging.info('predection:', prediction)
+        logging.info('predection: {prediction}')
 
         return render_template('index.html', results= prediction[0])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
 
