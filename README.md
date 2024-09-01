@@ -1,4 +1,4 @@
-# Predict Students Math Scores using Regression Model (Web-application)
+# Math Scores Regressor
 ![Screenshot of the web appliction.](math-scores.gif)
 
 
