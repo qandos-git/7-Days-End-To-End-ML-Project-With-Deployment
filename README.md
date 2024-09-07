@@ -11,6 +11,8 @@
 
 ## Description
 This project build a machine learning model to predict student math scores. It is built using a modular design, allowing for easy extension and modification of different components, such as data processing, model training, and evaluation.
+
+[Dataset in kaggle](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics/data)
 ### Steps
 1. Set up the project structure, including components such as logger, exception handling, requirements, etc.
 2. Prepare the dataset using the data_ingestion component.
