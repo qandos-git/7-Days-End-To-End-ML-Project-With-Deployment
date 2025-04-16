@@ -1,4 +1,4 @@
-# Math Scores Regressor
+# 7-Days-End-To-End-ML-Project-With-Deployment
 ![Screenshot of the web appliction.](math-scores.gif)
 
 
@@ -10,7 +10,7 @@
 
 
 ## Description
-This project build a machine learning model to predict student math scores. It is built using a modular design, allowing for easy extension and modification of different components, such as data processing, model training, and evaluation.
+This project is an implementation of a YouTube tutorial [7-Days-End-To-End-ML-Project-With-Deployment](https://www.youtube.com/watch?v=S_F_c9e2bz4&list=PLZoTAELRMXVPS-dOaVbAux22vzqdgoGhG) that aims to develop a machine learning model to predict student math scores. It is built using a modular design, allowing for easy extension and modification of different components, such as data processing, model training, and evaluation.
 
 [Dataset in kaggle](https://www.kaggle.com/datasets/rkiattisak/student-performance-in-mathematics/data)
 ### Steps
